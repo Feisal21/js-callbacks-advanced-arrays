@@ -1,3 +1,25 @@
+// coding with my instructor
+// High order function - function that take another function as parameter
+// callback function - function that we pass HOF as argument
+
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
+// console.log(add(3,4))
+// higher order function
+function calc(num1, num2, cb){
+  return cb(num1, num2);
+}
+
+// const add = (num1, num2) => num1 + num2; // this is a callback function
+// const sub = (num1, num2) => num1 - num2; // this is a callback function
+// const multi = (num1, num2) => num1 * num2; // this is a callback function
+// const divid = (num1, num2) => num1 / num2; // this is a callback function
+
+// console.log(calc(4, 3, add));
+// console.log(calc(4, 3, sub));
+// console.log(calc(4, 3, divid));
+
 // Create a higher order function and invoke the callback function to test your work. You have been provided an example of a problem and a solution to see how this works with our items array.  Study both the problem and the solution to figure out the rest of the problems.
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
